@@ -27,8 +27,40 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        week03Variables()
     }
 }
+
+private fun week03Variables() {
+    println("Week 03: Variables")
+
+    val courseName = "Mobile Programming"   //java final
+    //courseName = "Data Structure" //error
+
+    var week = 2
+    week = 3
+    println("Course : $courseName")
+    println("Week : $week")
+
+    println("========== Kotlin Variables ==========")
+    val name = "Android"
+    var version = 8
+
+    println("Hi $name $version")
+
+    val age: Int = 23
+    val height: Double = 168.5
+    val isStudent: Boolean = true
+
+    println("Age: $age, Height: $height, Student: $isStudent")
+
+    //var nickname:String = null    //error
+    var nickname:String? = null
+    nickname = "mirae"
+    println("Nickname: $nickname ${nickname?.length}")
+
+}
+
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
