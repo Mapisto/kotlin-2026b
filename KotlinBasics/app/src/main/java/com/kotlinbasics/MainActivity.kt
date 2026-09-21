@@ -52,7 +52,7 @@ private fun week03Variables() {
     val age: Int = 23
     val height: Double = 168.5
     val isStudent: Boolean = true
-
+0
     println("Age: $age, Height: $height, Student: $isStudent")
 
     //var nickname:String = null    //error
@@ -69,6 +69,19 @@ private fun week03Functions(){
 //    println(greet("Android developer"))
 
     println("== Kotlin Functions ==")
+
+    fun printAll(vip: Boolean, name: String){
+        println("$vip, $name")
+    }
+    fun printMany(vararg msg: String){      //variable arguments
+        for (m in msg) println(m)
+    }
+
+    //printAll("dy", true)
+    printAll(true, "dy")
+    printAll(name = "mirae", vip = true)    //named arguments
+
+    printMany("A", "B", "C","D")
 
     fun greet(name: String): String {
         return "Hello, $name!"
